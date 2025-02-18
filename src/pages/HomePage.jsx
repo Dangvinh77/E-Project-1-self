@@ -22,7 +22,7 @@ import CottonCandy from "../assets/img/CottonCandy.jpg";
 import DippinDots from "../assets/img/DippinDots.jpeg";
 import FlavorBurst from "../assets/img/FlavorBurst.jpg";
 import Fries from "../assets/img/Fries.jpg";
-import FrozenFlavors from "../assets/img/FrozenFlavors.jpeg";
+import FrozenFlavors from "../assets/img/coolstuff/FrozenFlavors.jpeg";
 import GeorgiaLemon from "../assets/img/GeorgiaLemon.jpeg";
 import Heidelberg from "../assets/img/Heidelberg.jpg";
 import LemonStand from "../assets/img/LemonStand.jpeg";
@@ -52,7 +52,7 @@ const HomePage = () => {
           <div className="content-container">
             <video className="centered-video" controls loop autoPlay>
               <source
-                src="https://huggingface.co/dangvinh77/uYouPlus/resolve/main/kap-website-banner-video-reduced.mp4"
+                src="https://huggingface.co/dangvinh77/eproject/resolve/main/kap-website-banner-video-reduced.mp4"
                 type="video/mp4"
               />
               Your browser does not support the video tag.
