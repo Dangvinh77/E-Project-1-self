@@ -207,7 +207,7 @@ const Tickets = () => {
     });
 
     // Reset form fields (optional - you might want to keep some fields)
-    setQuantity(1);
+    // setQuantity(1);
     setCardholderName("");
     setBillingAddress("");
     setPhoneNumber("");
@@ -217,7 +217,13 @@ const Tickets = () => {
     setCvv("");
     // setSubmissionMessage(""); // Don't set this anymore
   };
-
+  useEffect(() => {
+    if (isPaymentSuccessful) {
+      setTimeout(() => {
+        setQuantity(1); // Reset quantity after success message is displayed
+      }, 3000); // Adjust the timeout as needed
+    }
+  }, [isPaymentSuccessful]);
   // Conditional Rendering: Show SuccessMessage if payment is successful
   if (isPaymentSuccessful) {
     return (
